@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -57,27 +57,54 @@
   />
 
   <meta name="theme-color" content="#fafafa">
+  <style>
+    .carousel {
+      min-height: 300px; /* Set a minimum height for the carousel */
+    }
+  .carousel-item img {
+    min-height: 300px; /* Set a minimum height for the carousel images */
+    object-fit: cover;
+    max-height: 100%;
+  }
+</style>
+  
+    
 </head>
 
 <body>
-  <div class="container">
-    <header class="d-flex  flex-wrap p-2 m-1 border-bottom">
-      <a href="/"  class="d-flex flex-row align-items-center  p-2 m-1 link-body-emphasis text-decoration-none">
+                        <!--NAV BAR IS HERE-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand d-flex flex-row align-items-center p-2 m-1 link-body-emphasis text-decoration-none">
         <i class="fas fa-compass-drafting p-1 m-2"></i>
-        <span  class=" d-flex fs-auto me-md-auto ">DIVYA ENCO</span>
+        <span class="d-flex fs-auto me-md-auto">DIVYA ENCO</span>
       </a>
-
-      <ul class="d-flex flex-row-reverse nav nav-pills">
-        <li class="nav-item"><a href="./contactus.html" class="nav-link">Contact Us</a></li>
-        <li class="nav-item"><a href="./clients.html" class="nav-link">Clients & Testimonials</a></li>
-        <li class="nav-item"><a href="./portfolio.html" class="nav-link">Portfolio</a></li> 
-        <li class="nav-item"><a href="./products_services.html" class="nav-link">Products & Services</a></li>
-        <li class="nav-item"><a href="./aboutus.html" class="nav-link">About Us</a></li>
-        <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
-
-      </ul>
-    </header>
-
+      <button 
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-2"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item px-2"><a href="./aboutus.html" class="nav-link">About Us</a></li>
+          <li class="nav-item px-2"><a href="./products_services.html" class="nav-link">Products & Services</a></li>
+          <li class="nav-item px-2"><a href="./portfolio.html" class="nav-link">Portfolio</a></li> 
+          <li class="nav-item px-2"><a href="./clients.html" class="nav-link">Clients & Testimonials</a></li>
+          <li class="nav-item px-2"><a href="./contactus.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+                        <!--NAV BAR ENDS HERE-->
+                        <!--CAROUSEL STARTS HERE-->
   <div id="myCarousel" class="carousel carousel-light slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -94,7 +121,7 @@
 -->        <div class="container">
           <div class="carousel-caption text-start">
             <h1>Welcome to Divya Enco</h1>
-            <p class="opacity-75">Innovation meets precision in every fabrication. We're here to turn your ideas into reality. Explore our world of excellence and let's craft the extraordinary together.</p>
+            <p class="opacity-75 d-none d-lg-block">Innovation meets precision in every fabrication. We're here to turn your ideas into reality. Explore our world of excellence and let's craft the extraordinary together.</p>
             <p><a class="btn btn-lg btn-primary" href="./aboutus.html">Our Story</a></p>
           </div>
         </div>
@@ -106,7 +133,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>Empowering Possibilities</h1>
-            <p>Discover the power of cutting-edge technology combined with our years of expertise. From concept to creation, we're your partners in pushing boundaries and unlocking new horizons.</p>
+            <p class="opacity-75 d-none d-lg-block">Discover the power of cutting-edge technology combined with our years of expertise. From concept to creation, we're your partners in pushing boundaries and unlocking new horizons.</p>
             <p><a class="btn btn-lg btn-primary" href="./clients.html">Sucess stories</a></p>
           </div>
         </div>
@@ -118,7 +145,7 @@
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>Quality Beyond Measure</h1>
-            <p>At Divya Enco, excellence isn't just a goal; it's our standard. Our commitment to quality ensures that every fabrication solution we deliver is a masterpiece, built to last.</p>
+            <p class="opacity-75 d-none d-lg-block">At Divya Enco, excellence isn't just a goal; it's our standard. Our commitment to quality ensures that every fabrication solution we deliver is a masterpiece, built to last.</p>
             <p><a class="btn btn-lg btn-primary" href="./portfolio.html">Browse gallery</a></p>
           </div>
         </div>
@@ -136,8 +163,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-</div>
-<!--QUICK INTRO IS HERE !!!-->
+                        <!--CAROUSEL ENDS HERE-->
+                        <!--QUICK INTRO IS HERE !!!-->
 <div class="container my-5">
   <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -154,34 +181,34 @@
     </div>
   </div>
 </div>
-<!--COUNTER IS HERE-->
+                            <!--COUNTER IS HERE-->
 
 <div class="container">
     
   <div class="row">
 
-<div class="four col-md-3 rounded shadow-1-strong">
+<div class="four col-md-3 col-6 rounded shadow-1-strong">
   <div class="counter-box rounded">
     <i class="fa fa-group"></i>
     <span class="counter">5</span>
     <p>Happy Clients</p>
   </div>
 </div>
-<div class="four col-md-3 rounded shadow-1-strong">
+<div class="four col-md-3 col-6 rounded shadow-1-strong">
   <div class="counter-box rounded">
     <i class="fas fa-square-check"></i>
     <span class="counter">25</span>
     <p>Successful Projects</p>
   </div>
 </div>
-<div class="four col-md-3 rounded shadow-1-strong">
+<div class="four col-md-3 col-6 rounded shadow-1-strong">
   <div class="counter-box rounded">
     <i class="fas fa-trophy"></i>
     <span class="counter">4</span>
     <p>Awards received</p>
   </div>
 </div>
-<div class="four col-md-3 rounded shadow-1-strong">
+<div class="four col-md-3 col-6 rounded shadow-1-strong">
   <div class="counter-box rounded">
     <i class="fas fa-calendar-check"></i>
     <span class="counter">15</span>
@@ -191,7 +218,7 @@
 </div>	
 </div>
 
-  <!--                                      FOOTER IS HERE !!                             -->
+                         <!--       FOOTER IS HERE !!                             -->
 
   <div class="container shadow-4-strong">
   <!-- Footer -->
@@ -244,7 +271,7 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-building me-3"></i>Divya EnCo Global
@@ -257,7 +284,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Products
@@ -277,9 +304,9 @@
         </div>
         <!-- Grid column -->
 
-        <!-- Grid column -->
+        <!-- 
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
+          <!-- Links 
           <h6 class="text-uppercase fw-bold mb-4">
             Useful links
           </h6>
@@ -299,10 +326,11 @@
             <a href="#!" class="text-reset">Clients & Testimonials</a>
           </p>
         </div>
+        -->
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
           <p><i class="fas fa-location-dot me-3"></i>
@@ -324,7 +352,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Divya EnCo, All rights reserved.</a>
+    <a class="text-reset fw-bold" href="">Divya EnCo, All rights reserved.</a>
   </div>
   <!-- Copyright -->
 </footer>
@@ -335,7 +363,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
